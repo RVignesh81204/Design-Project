@@ -1,0 +1,787 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.task{
+    margin-left: 50px;
+}
+
+.nav-bar{
+    position:sticky;
+    top: 0;
+    z-index: 10;
+    width: 1000px;
+    height: 60px;
+    background-color: #F0F0F0;
+    box-shadow: 0px 4px 4px #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#des {
+    margin-left: 30px;
+}
+
+#dt{
+    position: relative;
+    top: 25px;
+}
+
+#des img{
+    height: 40px;
+    margin-top: 10px;
+}
+
+.logo {
+    margin-top: 5px;
+    margin-left: 450px;
+}
+
+.logo img {
+    width: 25px;
+    height: 36px;
+    position: relative;
+    bottom: 30px;
+    left: 280px;
+    margin-left: 10px ;
+}
+
+.dot{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-right: 60px;
+    position: relative;
+    top: 1px;
+    left: 170px;
+}
+
+
+.dot img {
+    margin-bottom: 2px;
+}
+
+#red-dot{
+    position: relative;
+    right: 130px;
+}
+
+h3{
+    color: #0029FF;
+    position: relative;
+    left: 40px;
+}
+
+.explore{
+    font-size: small;
+    width: 850px;
+    height: 110px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    padding: 2px;
+    position: relative;
+    left: 40px;
+}
+
+.explore h4, p{
+    margin-left: 10px;
+}
+
+#submit{
+    width: 110px;
+    height: 30px;
+    border: 1px;
+    border-radius: 10px;
+    background-color: #0029FF;
+    color: white;
+    position: absolute;
+    left: 750px;
+    top: 80px;
+}
+
+.cards{
+    display: flex;
+    justify-content: center; 
+    position: relative;
+    right: 50px;   
+}
+
+.section1 div, .section2 div {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 400px;
+    height: 520px;
+    box-shadow: 0px 4px 4px rgb(219, 214, 214);
+}
+
+.section1, .section2{
+    margin-left: 30px;
+}
+
+.section1 div{
+    margin-bottom: 30px;
+}
+
+.section2 div{
+    margin-bottom: 30px;
+}
+
+#card-1 .text1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    background-color: #000000;
+    height: 30px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#card-1 .img1{
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 7px;
+    left: 450px;
+    
+}
+
+.desc{
+    font-size: 13px;
+}
+
+#card-1 .meeting{
+    position: absolute;
+    top: 150px;
+    left: 80px;
+    width: 400px;
+    height: 200px;
+}
+
+#card-3 .text2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    background-color: #000000;
+    height: 30px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#card-3 .img2{
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 7px;
+    left: 880px;
+
+}
+
+#threadA{
+    border: 1px solid white;
+    border-top-color: grey ;
+    width: 318px;
+    height: 30px;
+    margin-left: 0.5px;
+    background-color: #feffc0;
+    font-weight: 600;
+    padding-top: 5px;
+    padding-left: 80px ;
+}
+
+#vector{
+    position: relative;
+    top: 45px;
+    left: 15px;
+}
+
+#card-3 #thread{
+    position: relative;
+    bottom: 32px;
+}
+
+
+.chats .chat1{
+    font-size: 10px;
+    width: 150px;
+    height: 95px;
+    background-color: #c6bfbf;
+    opacity: 0.6;
+    font-weight: 600;
+    box-shadow: 1px 3px 8px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 40px;
+    padding-left: 10px;
+    padding-top: 3px;
+}
+
+.sub-chat1{
+    position: relative;
+    bottom: 120px;
+    font-size: 10px;
+    font-weight: 500;
+    background-color: white;
+    border-radius: 10px;
+    width: 150px;
+    height: 70px;
+    padding-left: 10px;
+    padding-top: 2px;
+}
+
+.chats .chat2{
+    font-size: 10px;
+    width: 150px;
+    height: 95px;
+    background-color: #c6bfbf;
+    opacity: 0.6;
+    font-weight: 600;
+    box-shadow: 1px 3px 8px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 40px;
+    padding-left: 10px;
+    padding-top: 3px;
+}
+
+.sub-chat2{
+    position: relative;
+    bottom: 120px;
+    /* left: 10px; */
+    font-size: 10px;
+    font-weight: 500;
+    background-color: white;
+    border-radius: 10px;
+    width: 150px;
+    height: 70px;
+    padding-left: 10px;
+    padding-top: 2px;
+}
+
+.third-chat{
+    position: relative;
+    bottom: 230px;
+    margin-left: 5px;
+}
+
+.third-chat .chat3{
+    font-size: 10px;
+    width: 360px;
+    height: 95px;
+    background-color: #c6bfbf;
+    opacity: 0.6;
+    font-weight: 600;
+    border-radius: 10px;
+    position: relative;
+    bottom: 40px;
+    padding-left: 10px;
+    padding-top: 3px;
+
+}
+
+.third-chat .sub-chat3{
+    position: relative;
+    bottom: 123px;
+    /* left: 10px; */
+    font-size: 10px;
+    font-weight: 500;
+    background-color: white;
+    border-radius: 10px;
+    width:360px;
+    height: 70px;
+    padding-left: 10px;
+    padding-top: 2px;
+}
+
+.first-chat{
+    position: relative;
+    left: 15px;
+}
+
+.second-chat{
+    position: relative;
+    left: 210px;
+    bottom: 190px;
+    
+}
+
+.icons{
+    position: relative;
+    bottom: 300px;
+    left: 50px;
+}
+
+.icons #category {
+    border-color: white;
+    box-shadow: 0px 2px 4px;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    position: relative;
+    left: 4px;
+    bottom: 5px;
+    font-weight: 600;
+    font-size: small;
+}
+
+.icons #process{
+    border-color: white;
+    box-shadow: 0px 2px 4px;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    position: relative;
+    left: 8px;
+    bottom: 5px;
+    font-weight: 600;
+    font-size: small;
+
+}
+
+#sub-thread{
+    width: 97px;
+    height: 36px;
+    background-color: #0029FF;
+    border: 1px;
+    border-radius: 10px;
+    color: white;
+    position: relative;
+    bottom: 290px;
+    left: 10px;
+}
+
+.notice{
+    position: relative;
+    left: 920px;
+    bottom: 1190px;
+    width: 160px;
+}
+.notice #notice-board{
+    position: relative;
+    right: 100px;
+    bottom: 8px;
+}
+
+#notices p, #boards p{
+    width: 50px;
+}
+ #cross-mark{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    bottom: 680px;
+    left: 15px;
+}
+
+#exp{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 15px;
+    bottom: 340px;
+    
+}
+
+#exp p{
+    color: white;
+    font-size: x-small;
+}
+
+.quest{
+    position: relative;
+    left: 930px;
+    bottom: 900px;
+    width: 100px;
+}
+
+.blue-icons{
+    position: relative;
+    right: 20px;
+}
+
+#blue-quest{
+    position: relative;
+    bottom: 10px;
+    right: 43px;
+    height: 30px;
+}
+
+#blue-circle{
+    height: 50px;
+}
+
+.discussion{
+    position: relative;
+    left: 930px;
+    bottom: 895px;
+    width: 100px;
+
+}
+
+#blue-discuss{
+    height: 50px;
+}
+
+#blue-meeting{
+    position: relative;
+    bottom: 10px;
+    right: 43px;
+    height: 30px;
+}
+
+.calendar{
+    position: relative;
+    left: 930px;
+    bottom: 890px;
+    width: 100px;
+}
+
+#calendar-circle{
+    height: 50px;
+}
+
+#calendar-schedule{
+    position: relative;
+    bottom: 10px;
+    right: 42px;
+    height: 30px;
+}
+
+#card-2 .text3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    background-color: #000000;
+    height: 30px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#card-2 .img3{
+    width: 18px;
+    height: 18px;
+    position: relative;
+    bottom: 55px;
+    left: 370px;
+
+}
+
+.description{
+    font-size: smaller;
+    position: relative;
+    bottom: 30px;
+}
+
+#card-4 .text4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    background-color: #000000;
+    height: 30px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#card-4 .img4{
+    width: 18px;
+    height: 18px;
+    position: relative;
+    bottom: 55px;
+    left: 370px;
+    
+}
+
+.desc4{
+    font-size: smaller;
+    position: relative;
+    bottom: 30px;
+}
+
+
+
+#title{
+    color: black;
+    position: relative;
+    left: 2px;
+    font-weight: 500;
+}
+
+#textbox{
+    background-color: #fcfbfb;
+    width: 370px;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: -2px 2px 6px;
+    position: relative;
+    left: 13px;
+}
+
+#content{
+    color: black;
+    position: relative;
+    left: 2px;
+    top: 20px;
+    font-weight: 500;
+}
+
+.first-box{
+    position: relative;
+    top: 10px;
+    left: 13px;
+    width: 370px;
+    height: 60px;
+    background-color: #fcfbfb;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 0px 2px 6px;
+}
+
+.tabs{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 5px;
+    left: 5px;
+}
+
+.tabs p{
+    color: grey;
+    font-size: 12px;
+}
+
+.second-tab{
+    display: flex;
+    position: relative;
+    left: 15px;
+    bottom: 10px;
+}
+
+.second-tab #left-arrow{
+    height: 15px;
+}
+
+.second-tab #right-arrow{
+    position: relative;
+    left: 10px;
+    top: 1px;
+    height: 13px;
+
+}
+
+.second-tab #arrows{
+    position: relative;
+    left: 25px;
+    height: 15px;
+}
+
+
+.second-tab #para{
+    position: relative;
+    left: 40px;
+    bottom: 2px;
+    background-color: #EBEBEB;
+    font-size: small;
+    width: 90px;
+    height: 20px;
+    padding-left: 3px;
+
+}
+
+.second-tab .black-dots{
+    position: relative;
+    left: 60px;
+    bottom: 8px;
+}
+
+.second-box{
+    width: 370px;
+    height: 122px;
+    background-color: #fcfbfb;
+    box-shadow: -1px 1px 11px;
+    position: relative;
+    top: 10px;
+    left: 13px;
+}
+
+.intro{
+    position: relative;
+    left: 20px;
+    bottom: 8px;
+    background-color: #f2f2f2;
+    width: 360px;
+    height: 35px;
+}
+
+.intro #introduction{
+    position: relative;
+    left: 40px;
+    bottom: 35px;
+    font-size: 16px;
+}
+
+.intro img{
+    position: relative;
+    left: 20px;
+    top: 5px;
+}
+
+#card-des{
+    font-size: 13px;
+    margin-left: 30px;
+}
+
+#see-more{
+    color: rgb(87, 85, 85);
+    margin-left: 320px;
+    margin-top: 30px;
+    font-size: 13px;
+}
+
+.card-four{
+    position: relative;
+    left: 20px;
+    background-color: #fcfcfc;
+    border: 1px solid #d9d7d7;
+    width: 360px;
+    height: 35px;
+}
+
+.card-four img{
+    position: relative;
+    left: 20px;
+    top: 5px;
+}
+
+.card-four p{
+    position: relative;
+    left: 40px;
+    bottom: 35px;
+    font-size: 16px;
+}
+
+#sec-des{
+    font-size: 13px;
+    padding-left: 20px;
+}
+
+#example{
+    position: relative;
+    left: 40px;
+    background-color: #fcfcfc;
+    border: 1px solid #d9d7d7;
+    width: 310px;
+    height: 35px;
+    padding-left: 20px;
+    padding-top: 8px;
+}
+
+#concept{
+    position: relative;
+    bottom: 10px;
+    left: 30px;
+    font-size: 13px;
+}
+
+.journey-board{
+    width: 300px;
+    height: 400px;
+    position: absolute;  
+    z-index: 1; 
+    top: 65px;
+    left: 0;
+    border-radius: 0px 20px 20px 20px;
+    background-color: #fdfdfd;
+    box-shadow: 0 1px 1px;
+    transition: transform 0.3s ease, width 0.3s ease;
+}
+
+.journey-board .arrow-black{
+    width: 300px;
+    height: 40px;
+    background-color: #000000;
+    border-top-right-radius: 20px;
+    position: relative;
+    bottom: 15px;
+}
+
+.arrow-black img{
+    position: relative;
+    bottom: 32px;
+    left: 260px;
+    height: 25px;
+}
+
+.arrow-black p{
+    position: relative;
+    top: 8px;
+    left: 10px;
+    color: white;
+    font-weight: 600;
+}
+
+.sub-items{
+    position: relative;
+    left: 5px;
+    font-size: 14px;
+}
+
+#menu-check{
+    display: none;
+}
+
+#menu-check:checked + .journey-board{
+    transform:translateX(-230px);    
+}
+
+#menu-check:checked + .journey-board .one{
+    transform: translateX(-160px);
+}
+
+#menu-check:checked + .journey-board  .arrow-black label img{
+    content: url('./right.png');
+}
+
+.img-one{
+    display: none;
+}
+
+.img-one #blue-rectangle {
+    width: 40px;
+}
+
+.img-one #blue-one{
+    height: 20px;
+    position: relative;
+    bottom: 37px;
+    right: 20px;
+    left: 17px;
+}
+
+#menu-check:checked + .journey-board .one .img-one{
+    display: block;
+    margin-left: 405px;
+}
+
+
+
+
+
+
+
+
+
+
